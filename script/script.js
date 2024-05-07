@@ -42,13 +42,15 @@ function reloadSection(sectionId) {
 
 // Compose email - Click on Contact Me button
 function composeEmail() {
+    var senderName = document.getElementById("senderName").value;
     var senderEmail = document.getElementById("senderEmail").value;
     var subject = document.getElementById("senderSubject").value;
     var message = document.getElementById("comment").value;
 
-    var mailtoLink = "mailto:adideshmukh17@gmail.com" +
+    var mailtoLink = 
+        "mailto:adideshmukh17@gmail.com" +
         "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(message + "\n\nFrom: " + senderEmail);
+        "&body=" + encodeURIComponent(message + "\n\nFrom, \n" + senderName + "\nEmail: " + senderEmail);
 
     window.location.href = mailtoLink;
 }

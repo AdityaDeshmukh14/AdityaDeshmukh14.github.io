@@ -70,6 +70,12 @@ hr {
 
 
 /* Home section CSS starts here */
+.display-3 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 #opening-section {
     position: relative;
     height: 100vh; 
@@ -100,15 +106,81 @@ hr {
     z-index: 1; 
 }
 
+h1.display-1 {
+    font-size: 6rem; 
+    -webkit-text-stroke: 5px #6e9bd6; 
+}
+
+@media (max-width: 980px) {
+    h1.display-1 {
+        font-size: 4rem; 
+        -webkit-text-stroke: 4px #6e9bd6; 
+    }
+}
+
+@media (max-width: 767px) {
+    h1.display-1 {
+        font-size: 3rem; 
+        -webkit-text-stroke: 3px #6e9bd6; 
+    }
+}
+
+@media (max-width: 580px) {
+    h1.display-1 {
+        font-size: 2rem; 
+        -webkit-text-stroke: 2px #6e9bd6; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1.display-1 {
+        font-size: 1rem; 
+        -webkit-text-stroke: 1px #6e9bd6; 
+    }
+}
 
 /* About section CSS starts here */
 .align-image{
     text-align: center;
+    
 }
+
 .align-image img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 40%;
+}
+
+@media (max-width: 980px) {
+    .align-image img {
+        max-width: 350px;
+        max-height: 350px;
+        border-radius: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .align-image img {
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 40%;
+    }
+}
+
+@media (max-width: 580px) {
+    .align-image img {
+        max-width: 250px;
+        max-height: 250px;
+        border-radius: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .align-image img {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 40%;
+    }
 }
 
 .about-text{
@@ -137,12 +209,41 @@ hr {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .user-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
 .user-projects img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     width: 250px;
     height: 250px;
+}
+
+@media (max-width: 767px) {
+    .user-projects img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        width: 175px;
+        height: 175px;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 580px) {
+    .user-projects img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        width: 150px;
+        height: 150px;
+        padding-bottom: 10%;
+    }
 }
 
 .user-image {
@@ -153,6 +254,19 @@ hr {
     width: 50%;
     padding: 0 20px; 
 }
+
+@media (max-width: 767px) {
+    .uc-desc{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-heading {
+        font-size: 1rem; 
+    }
+}
+
 
 
 /* Skill section CSS and Animation starts here */
@@ -320,39 +434,4 @@ h2.tool {
 @media (max-width: 480px){ 
   h2 {font-size:2.2em; padding: 10px 0 15px 0;}
   .col {width: 90%;}
-}
-
-@media (max-width: 1200px) {
-    h1.display-1 {
-        font-size: 6rem; 
-        -webkit-text-stroke: 5px #6e9bd6; 
-    }
-}
-
-@media (max-width: 980px) {
-    h1.display-1 {
-        font-size: 4rem; 
-        -webkit-text-stroke: 4px #6e9bd6; 
-    }
-}
-
-@media (max-width: 767px) {
-    h1.display-1 {
-        font-size: 2rem; 
-        -webkit-text-stroke: 3px #6e9bd6; 
-    }
-}
-
-@media (max-width: 580px) {
-    h1.display-1 {
-        font-size: 1.5rem; 
-        -webkit-text-stroke: 2px #6e9bd6; 
-    }
-}
-
-@media (max-width: 480px) {
-    h1.display-1 {
-        font-size: 1rem; 
-        -webkit-text-stroke: 1px #6e9bd6; 
-    }
 }
