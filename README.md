@@ -4,5 +4,4 @@ GitHub Pages URL: https://adityadeshmukh14.github.io/
 Personal Website: https://adideshmukh.com
 
 ## Website Preview
-![Portfolio Image](/main/img/Home-Page.gif)
-
+![Portfolio Image](/img/Home-Page.gif)
