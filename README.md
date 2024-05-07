@@ -1,2 +1,3 @@
-# AdityaDeshmukh14.github.io
-Aditya's Portfolio Repo
+# Aditya Deshmukh Portfolio
+GitHub Pages URL: https://adityadeshmukh14.github.io/
+Personal Website: https://adideshmukh.com
