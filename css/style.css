@@ -1,0 +1,267 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    /* font-family: 'Open Sans'; */
+    font-family: 'Architects Daughter';
+    font-size: 18px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #6e9bd6;
+    border-bottom: 1px solid #dee2e6; /* Light border at the bottom */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Bold font for brand */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark text color for nav links */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Bold font for active nav link */
+}
+
+.navbar-toggler {
+    border-color: #333; /* Dark border color for toggler icon */
+}
+
+/* Styles for GitHub and LinkedIn links */
+.ml-lg-3 .btn-link {
+    color: #333; /* Dark text color for links */
+    margin-right: 10px; /* Spacing between social icons */
+}
+
+/* Hover effect for social icons */
+.ml-lg-3 .btn-link:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+#opening-section {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    min-width: 100%; /* Cover the entire container */
+    min-height: 100%; /* Cover the entire container */
+    object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+.video-container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Text color for content */
+    z-index: 1; /* Ensure content is above the video */
+}
+
+.align-image{
+    text-align: center;
+}
+.align-image img {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 40%;
+}
+
+.about-text{
+    font-family: 'Architects Daughter';
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Skill section CSS and Animation starts here */
+* {margin: 0; padding: 0; outline: none;}
+
+h2 {
+  font-size: 2.7em;
+  font-weight: normal;
+  padding: 10px 0 16px 0;
+  margin: 0 0 30px;
+  text-align:center;
+  color:#2187e7;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
+  background:#000;
+  border-radius:2px;
+  border: 1px solid #2187e7;  
+  box-shadow: 0px 0px 50px -8px #2187e7;
+}
+h2.framework {
+  border: 1px solid #9ACD32;  
+  box-shadow: 0px 0px 50px -8px #9ACD32;
+  color: #9ACD32;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
+}
+
+h2.tool {
+  border: 1px solid #FF4500;  
+  box-shadow: 0px 0px 50px -8px #FF4500;
+  color: #FF4500;
+  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
+}
+ 
+.container {
+  /* width: 90%; */
+  /* padding:5%; */
+  margin: 0 auto; 
+  overflow: hidden;
+}
+
+.col {
+  width: 23%;
+  margin: 0 5%;
+  position: relative;
+  float: left;
+  font-size: 12px;
+  line-height: 2em;
+  padding: 5% 0;
+} 
+/*.col { width:101%; }*/
+.skill { 
+  list-style:none; 
+  padding-top:30px;
+}
+
+.skill li { 
+  margin-bottom:70px; 
+  background:#030303; 
+  height:6px; 
+  border-radius:3px; 
+  border-left:1px solid #111; 
+  border-top:1px solid #111; 
+  border-right:1px solid #333; 
+  border-bottom:1px solid #333;  
+}
+
+.skill li em { 
+  position:relative; 
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+  color:#dedede;
+  top:-28px;
+}
+
+.blueline { 
+  height: 3px; 
+  margin: 2px 0; 
+  background: #2187e7; 
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.6);
+}
+.greenline { 
+  height: 3px; 
+  margin: 2px 0; 
+  background: #9ACD32; 
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47,0.4);
+}
+.redline { 
+  height: 3px; 
+  margin: 2px 0; 
+  background: #FF4500; 
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0,0.4);
+}
+
+.languages      { opacity:1;  animation:languages 5s ease-out;     }
+
+/*languages*/
+.python     { width:95%;  animation:python 2s ease-out; }
+.sql        { width:95%;  animation:sql 2s ease-out;    }
+.cpp        { width:90%;  animation:cpp 2s ease-out;    }
+.js         { width:75%;  animation:js 2s ease-out;     }
+.scala      { width:70%;  animation:scala 2s ease-out;  }
+.rlang      { width:70%;  animation:rlang 2s ease-out;  }
+
+/*frameworks*/
+.numpy      { width:90%;  animation:numpy 2s ease-out;  }
+.sklearn    { width:90%;  animation:sklearn 2s ease-out;}
+.pandas     { width:90%;  animation:pandas 2s ease-out; }
+.tensor     { width:80%;  animation:tensor 2s ease-out; }
+.pytorch    { width:70%;  animation:pytorch 2s ease-out;}
+.keras      { width:60%;  animation:keras 2s ease-out;  }
+
+/*tools*/
+.dcpc       { width:95%;  animation:dcpc 2s ease-out;   }
+.tableau    { width:90%;  animation:tableau 2s ease-out;}
+.excel      { width:90%;  animation:excel 2s ease-out;  }
+.nltk       { width:85%;  animation:nltk 2s ease-out;   }
+.d3js       { width:80%;  animation:d3js 2s ease-out;   }
+.spark      { width:70%;  animation:spark 2s ease-out;  }
+
+
+@keyframes languages    { 0% { opacity:0; } 100% { opacity:1; }  }
+
+/*languages*/
+@keyframes python       { 0% { width:0px; } 100% { width:95%; }  }
+@keyframes sql          { 0% { width:0px; } 100% { width:95%; }  }
+@keyframes cpp          { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes js           { 0% { width:0px; } 100% { width:75%; }  }
+@keyframes scala        { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes rlang        { 0% { width:0px; } 100% { width:70%; }  }
+
+/*frameworks*/
+@keyframes numpy        { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes sklearn      { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes pandas       { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes tensor       { 0% { width:0px; } 100% { width:80%; }  }
+@keyframes pytorch      { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes keras        { 0% { width:0px; } 100% { width:60%; }  }
+
+/*tools*/
+@keyframes dcpc         { 0% { width:0px; } 100% { width:95%; }  }
+@keyframes tableau      { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes excel        { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes nltk         { 0% { width:0px; } 100% { width:85%; }  }
+@keyframes d3js         { 0% { width:0px; } 100% { width:80%; }  }
+@keyframes spark        { 0% { width:0px; } 100% { width:70%; }  }
+
+
+/*media queries*/
+@media (max-width: 1200px){
+  h2 {font-size:2.2em;}
+}
+@media (max-width: 980px){
+  h2 {font-size:1.8em;}
+}
+@media (max-width: 767px){
+  h2 {font-size:1.4em;}
+}
+@media (max-width: 580px){
+  h2 {font-size:1.1em; padding:10px 0;}
+}
+@media (max-width: 480px){ 
+  h2 {font-size:2.2em; padding: 10px 0 15px 0;}
+  .col {width: 90%;}
+}
+
+/* Skill section CSS and Animation ends here */

@@ -1,7 +1,336 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm Aditya's portfolio website, hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <head>
+        <title>Aditya Deshmukh</title>
+        <link rel="icon" href="/img/icon.png">
+
+        <!-- Project Details -->
+        <meta charset="utf-8">
+        <meta name="author" content="Aditya">
+        <meta content="Aditya Deshmukh Website" name="keywords">
+        <meta content="Aditya Deshmukh Website" name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CDN -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap JS (Optional)
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>             -->
+
+        <!-- JQuery Script  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Fonts used for the website -->
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">   
+    </head>
+
+    <body>
+        <!-- Navbar Start -->
+        <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <img src="img/icon.png" alt="Logo" style="height: 50px; border-radius: 50%;">
+            </a>
+            <!-- The button will work whenever the device width is small (mobiles, tablets) -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="#home" class="nav-item nav-link">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#qualification" class="nav-item nav-link">Qualifications</a>
+                    <a href="#skill" class="nav-item nav-link" onclick="reloadSection('skill')">Skills</a>
+                    <a href="#project" class="nav-item nav-link">Projects</a>
+                    <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="ml-lg-3">
+                    <a href="https://github.com/AdityaDeshmukh14" class="btn btn-link" target="_blank">
+                        <i class="fab fa-github"> GitHub </i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deshmukh-aditya/" class="btn btn-link" target="_blank">
+                        <i class="fab fa-linkedin"> LinkedIn </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Video background  -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="img/bg-vid.mp4" type="video/mp4">
+                <img src="img/bg-img.jpeg" alt="Backup Image">
+            </video>
+        </div>
+
+        <!-- Name, Description and Effects -->
+        <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-left">
+                        <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Aditya Deshmukh</h1>
+                        <!-- The following line is the location where there is a typed text -->
+                        <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                            <a href="docs/Aditya_Deshmukh_Resume.pdf" class="btn btn-outline-light mr-5" download>Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Start -->
+        <div class="container-fluid py-1" id="about">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 5px #6e9bd6;">About</h1>
+                </div>
+                <div class="about-info">
+                    <div class="align-image">
+                        <img src="img/profile-pic.png" alt="">
+                    </div>
+                    <br>
+                    <div class="about-text">
+                        <p>From coding to crunching numbers, I'm Aditya Deshmukh—a tech enthusiast with a knack for turning data into gold. With a passion for problem-solving and a love for all things innovative, I dive deep into the world of software and analytics to drive meaningful change. When I'm not busy unraveling complex algorithms, you can find me exploring the latest trends in technology or perfecting my skills on the football field. <br> Interested in working together or having a chat? Feel free to contact me.</p>
+                    </div>
+                    <div class="hr-break">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row pb-3 pt-3">
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Data Science</h4>
+                        </div>
+                        <p>I am fascinated by the ability to uncover meaningful insights and make data-driven decisions that can drive positive change and innovation.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Software Development</h4>
+                        </div>
+                        <p>I enjoy creating impactful solutions that address real-world problems and have a passion for continuous learning and improvement in this dynamic field.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Machine Learning</h4>
+                        </div>
+                        <p>The opportunity to develop intelligent systems that can learn from data and improve over time excites me, as it has the potential to revolutionize industries.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Business Intelligence</h4>
+                        </div>
+                        <p>I am drawn to the power of data to drive strategic decisions and improve business performance, helping organizations achieve their goals more effectively.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Analytics</h4>
+                        </div>
+                        <p>I am passionate about using data analysis and critical thinking to solve complex problems and drive informed decision-making.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0 text-uppercase">Product Management</h4>
+                        </div>
+                        <p>I am motivated by the opportunity to create products that solve customer problems and improve their lives, combining my technical skills with a focus on user needs and business goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Qualification Start -->
+        <div class="container-fluid py-1" id="qualification">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 5px #6e9bd6;">Qualifications</h1>
+                </div>
+                <br>
+                <div class="row align-items-start">
+                    <!-- Work Experience start -->
+                    <div class="col-lg-6">
+                        <h3 class="mb-4 text-uppercase">Work Experience</h3>
+                        <div class="border-left border-primary pt-2 pl-4 ml-2">
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">Data Scientist</h5>
+                                <p class="mb-2" style="color:yellow"><strong>XSM Baseball</strong> | <small>2023 - Present</small></p>
+                                <p>
+                                    <strong> Tools & Frameworks: </strong> NumPy, SciKit-Learn, Pandas, SAS, Tableau, PyTorch, Tensorflow, Keras, XGBoost, LightGBM, Plotly, D3.js
+                                    <br>
+                                    <strong> Languages:</strong> Python, R, SQL, JavaScript
+                                    <br>
+                                    <strong> Databases:</strong> MySQL, PostgreSQL
+                                </p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">Senior Data Analyst</h5>
+                                <p class="mb-2" style="color:yellow"><strong>Arizona State University</strong> | <small>2022 - 2023</small></p>
+                                <p>
+                                    <strong> Tools & Frameworks: </strong> NumPy, Pandas, PowerBI, PyTorch, SciPy, D3.js, MS Excel, ggplot2, Seaborn, Matplotlib, 
+                                    <br>
+                                    <strong> Languages:</strong> Python, SQL, JavaScript
+                                    <br>
+                                    <strong> Databases:</strong> PostgreSQL, MongoDB
+                                </p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">Software Engineer - Technical Team Lead</h5>
+                                <p class="mb-2" style="color:yellow"><strong>Ernst & Young</strong> | <small>2020 - 2021</small></p>
+                                <p>
+                                    <strong> Tools & Frameworks: </strong> Duck Creek Policy Center, Duck Creek Billing Center, XSLT, .Net, AJAX, REST, SOAP, Tableau, MS Excel
+                                    <br>
+                                    <strong> Languages:</strong> Python, SQL, Java, XML
+                                    <br>
+                                    <strong> Core Competencies:</strong> Agile, Scrum, Microsoft Project, Azure DevOps, TFS, Jira, Confluence
+                                    <br>
+                                    <strong> Databases:</strong> MySQL
+                                </p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">Asscoiate Software Engineer</h5>
+                                <p class="mb-2" style="color:yellow"><strong>Ernst & Young</strong> | <small>2018 - 2019</small></p>
+                                <p>
+                                    <strong> Tools & Frameworks: </strong> Duck Creek Policy Center, .Net, REST, Tableau, MS Excel
+                                    <br>
+                                    <strong> Languages:</strong> Python, SQL, Java, XML
+                                    <br>
+                                    <strong> Databases:</strong> MySQL
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work Experience end -->
+
+                    <!-- Education start -->
+                    <div class="col-lg-6">
+                        <h3 class="mb-4 text-uppercase">Education</h3>
+                        <div class="border-left border-primary pt-2 pl-4 ml-2">
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">MS - Computer Science</h5>
+                                <p class="mb-2" style="color:yellow"><strong>Arizona State University</strong> | <small>2021 - 2023</small></p>
+                                <p>
+                                    <strong> Key Projects: </strong> Book Recommendation System, Trajectory Data in Spatial Data Science
+                                </p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">B.Tech - Computer Science & Engineering</h5>
+                                <p class="mb-2" style="color:yellow"><strong>SRM University</strong> | <small>2014 - 2018</small></p>
+                                <p>
+                                    <strong> Key Projects: </strong> Text Summarization Chatbot, Housing Price Predictor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education end -->
+                </div>
+            </div>
+        </div>
+        <!-- Qualification End -->
+
+        <!-- Skill Start -->
+        <div class="container-fluid py-1" id="skill">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 5px #6e9bd6;">Skills</h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h2 class="language">Languages</h2>
+                        <ul class="skill">
+                            <li><span class="blueline python"></span><em>Python</em></li>
+                            <li><span class="blueline sql"></span><em>SQL</em></li>
+                            <li><span class="blueline cpp"></span><em>C++</em></li>
+                            <li><span class="blueline js"></span><em>Javascript</em></li>
+                            <li><span class="blueline scala"></span><em>Scala</em></li>
+                            <li><span class="blueline rlang"></span><em>R</em></li>
+                        </ul>
+                      </div>
+                        <div class="col">
+                        <h2 class="framework">Frameworks</h2>
+                        <ul class="skill">
+                            <li><span class="greenline numpy"></span><em>NumPy</em></li>
+                            <li><span class="greenline sklearn"></span><em>Scikit-Learn</em></li>
+                            <li><span class="greenline pandas"></span><em>Pandas</em></li>
+                            <li><span class="greenline tensor"></span><em>Tensorflow</em></li>
+                            <li><span class="greenline pytorch"></span><em>PyTorch</em></li>
+                            <li><span class="greenline keras"></span><em>Keras</em></li>
+                        </ul>
+                      </div>
+                        <div class="col">
+                        <h2 class="tool">Tools</h2>
+                        <ul class="skill">
+                            <li><span class="redline dcpc"></span><em>Duck Creek</em></li>
+                            <li><span class="redline tableau"></span><em>Tableau</em></li>
+                            <li><span class="redline excel"></span><em>Microsoft Excel</em></li>
+                            <li><span class="redline nltk"></span><em>NLTK</em></li>
+                            <li><span class="redline d3js"></span><em>D3.js</em></li>
+                            <li><span class="redline spark"></span><em>Apache Spark</em></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skill End -->
+        
+        <!-- Contact section-->
+        <div id="contact">
+            <div class="container mt-3 contactContent">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 5px #6e9bd6; text-align: center;">Contact Me</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <!-- to edit google map goto httpsx://www.embed-map.com type your location, generate html code and copy the html  -->
+                        <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                            <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=seattle&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                </iframe>
+                            </div>
+                            <style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- form fields -->
+                        <form>
+                            <input type="text" class="form-control form-control-lg" placeholder="Name">
+                            <input type="email" class="form-control mt-3" placeholder="Email">
+                            <input type="text" class="form-control mt-3" placeholder="Subject">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Write your message"></textarea>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-success mt-3"> Contact Me </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Load javascript after loading all html content -->
+        <script src="script/script.js"></script>
+    </body>
 </html>
