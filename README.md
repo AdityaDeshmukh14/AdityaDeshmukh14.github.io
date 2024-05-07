@@ -22,6 +22,7 @@ Personal Website: https://adideshmukh.com
 
 ## Sections
 ✴️ About <br>
+✴️ Interests <br>
 ✴️ Qualification <br>
 ✴️ Skills <br>
 ✴️ Projects <br>
