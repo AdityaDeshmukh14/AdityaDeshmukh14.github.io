@@ -6,34 +6,36 @@ Personal Website: https://adideshmukh.com
 ## Website Preview
 ![Portfolio Image](/img/Home-Page.gif)
 
+<br>
+
 ⭐ Star me on GitHub — if it helps you, it helps me!
 
 ## Features
-🔥 Fully Responsive Template
-🔥 HTML5 
-🔥 CSS3
-🔥 Bootstrap 4.4.1
-🔥 Javascript and JQuery
-🔥 Typing animation using Typed.js
-🔥 Skills animation by CSS
-🔥 Fonts from Google and Font Awesome
+🔥 Fully Responsive Template <br>
+🔥 HTML5 <br>
+🔥 CSS3 <br>
+🔥 Bootstrap 4.4.1 <br>
+🔥 Javascript and JQuery <br>
+🔥 Typing animation using Typed.js <br>
+🔥 Skills animation by CSS <br>
+🔥 Fonts from Google and Font Awesome <br>
 
 ## Sections
-✴️ About 
-✴️ Qualification
-✴️ Skills
-✴️ Projects
-✴️ Contact
+✴️ About <br>
+✴️ Qualification <br>
+✴️ Skills <br>
+✴️ Projects <br>
+✴️ Contact <br>
 <br>
 ✴️ Blog .... Coming Soon
 
 ## Tools Used
-🧰 HTML5
-🧰 CSS3
-🧰 Javascript
-🧰 Typed.js
-🧰 JQuery
-🧰 Google Fonts
+🧰 HTML5 <br>
+🧰 CSS3 <br>
+🧰 Javascript <br>
+🧰 Typed.js <br>
+🧰 JQuery <br>
+🧰 Google Fonts <br>
 
 ## Contributing
 
