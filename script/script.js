@@ -1,7 +1,7 @@
 // Typed text script
 document.addEventListener('DOMContentLoaded', function(){
     var typed = new Typed('.typed-text-output', {
-        strings: ['Data Scientist', 'Software Developer', 'Tech Enthusiast'],
+        strings: ['Data Scientist', 'Analyst', 'Software Developer', 'Tech Enthusiast'],
         typeSpeed: 50,
         backSpeed: 30,
         smartBackspace: true,
